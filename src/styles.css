@@ -1,21 +1,54 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+/* Set basic styling for the form */
+form {
+  margin: 20px;
 }
 
-html, body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background-color: #fff;
+/* Style the input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
 }
 
-main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
+/* Style the submit button */
+input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
 }
 
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
+/* Change the color of the submit button on hover */
+input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+/* Add some basic styles to the label */
+label {
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Add some styling to the form container */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Set a max width for the form */
+form {
+  max-width: 500px;
+  width: 100%;
 }
