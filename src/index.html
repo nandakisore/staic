@@ -18,7 +18,7 @@
 			var password = document.getElementById("password").value;
 
 			// Send a POST request to the Azure Function to store the data
-			fetch('/api/store-data', {
+			fetch('https://stic.azurewebsites.net/api/HttpTrigger1?code=V8ORijqBJr8AkD0bg6bsqliW8OyKrRuyT-QKjaQ5XmOwAzFuJQHRgA==', {
 				method: 'POST',
 				body: JSON.stringify({ name: name, password: password }),
 				headers: {
